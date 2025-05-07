@@ -1,0 +1,10 @@
+.Carrousel {
+    img {
+      width: 10%;
+      height: 3em;
+      object-fit: cover;
+      object-position: center;
+  
+    }
+  
+  }
