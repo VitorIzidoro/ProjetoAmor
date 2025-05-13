@@ -5,13 +5,17 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(255, 215, 215);
+  background-color: rgb(251, 231, 219);
 
   background-image: url('../src/assets/fundolove.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position-y:bottom;
+  background-position-x:center;
+  background-blend-mode:luminosity;
+  
 
 
   font-synthesis: none;

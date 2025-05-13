@@ -168,3 +168,74 @@
     right: -60px;
   }
   
+
+
+
+
+
+
+
+
+
+  /*LOVENOTES*/
+
+  .container {
+    font-Family: Arial, sans-serif;
+    max-Width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-Color: #f9f9f9;
+    border-Radius: 8px;
+    box-Shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    
+      color: black;
+    
+  }
+
+  header {
+    text-Align: center;
+    margin-Bottom: 30px;
+  } 
+
+  section {
+    margin-Bottom: 30px;
+    padding: 20px;
+    background-Color: #fff;
+    border-Radius: 6px;
+    box-Shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  .timelineContainer {
+    display: flex;
+    overflow-X: auto;
+    padding-Bottom: 20px;
+  }
+  .timelineItem {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-Right: 20px;
+    text-Align: center;
+  }
+  .timelineImage {
+    max-Width: 100%;
+    height: auto;
+    border-Radius: 4px;
+    margin-Bottom: 10px;
+  }
+  .galleryContainer {
+    display: grid;
+    grid-Template-Columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .galleryImage {
+    width: 100%;
+    height: auto;
+    border-Radius: 4px;
+  }
+  footer {
+    text-Align: center;
+    margin-Top: 30px;
+    padding-Top: 20px;
+    border-Top: 1px solid #eee;
+    color: #555;
+  }
