@@ -19,13 +19,17 @@ import Imagem15 from '../assets/Imagem15.jpeg';
 import Imagem16 from '../assets/Imagem16.jpeg';
 import Imagem17 from '../assets/Imagem17.jpeg';
 import Imagem18 from '../assets/Imagem18.jpeg';
-
+import Imagem19 from '../assets/Imagem19.png';
+import Imagem20 from '../assets/Imagem20.png';
+import Imagem21 from '../assets/Imagem21.png';
+import Imagem22 from '../assets/Imagem22.png';
 
 
 const imagens = [
   Imagem1, Imagem2, Imagem3, Imagem4, Imagem5,
   Imagem6, Imagem7, Imagem8, Imagem9, Imagem10, Imagem11, 
-  Imagem12, Imagem13, Imagem14, Imagem15, Imagem16, Imagem17, Imagem18
+  Imagem12, Imagem13, Imagem14, Imagem15, Imagem16, Imagem17, Imagem18,
+  Imagem19, Imagem20, Imagem21, Imagem22
 ];
 
 function Photos() {

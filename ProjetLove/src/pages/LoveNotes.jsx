@@ -1,5 +1,8 @@
 import React from 'react';
 import '../style/styleAll.css'
+import Imagem11 from '../assets/Imagem11.jpeg';
+import Imagem1 from '../assets/Imagem1.jpeg';
+import Imagem14 from '../assets/Imagem14.jpeg';
 
 const LoveNotes = () => {
   // Dados de exemplo - substitua pelos seus dados reais
@@ -7,9 +10,9 @@ const LoveNotes = () => {
     titulo: "Nosso Primeiro Ano de Amor",
     mensagemBoasVindas: "365 dias de muitas alegrias, aprendizados e amor! Que venham muitos mais!",
     linhaDoTempo: [
-      { data: "Maio de 2024", evento: "Nosso primeiro encontro", foto: "url_da_sua_foto1.jpg" },
-      { data: "Junho de 2024", evento: "O pedido de namoro", foto: "url_da_sua_foto2.jpg" },
-      { data: "Agosto de 2024", evento: "Nossa primeira viagem juntos", foto: "url_da_sua_foto3.jpg" },
+      { data: "Setembro de 2024", evento: "O pedido de namoro", foto: Imagem11 },
+      { data: "Dezembro de 2024", evento: "Natal Do amor", foto: Imagem14 },
+      { data: "Fevereiro de 2025", evento: "Nosso primeiro Passeio Marcante", foto: Imagem1 },
       // Adicione mais momentos aqui
     ],
     nossaHistoria: "Aqui vocês podem escrever um texto mais longo sobre como se conheceram e o primeiro ano juntos.",
