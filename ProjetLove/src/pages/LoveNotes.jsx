@@ -6,6 +6,7 @@ import Imagem14 from "../assets/Imagem14.jpeg";
 import  { useState } from "react";
 
 
+
 const LoveNotes = () => {
   const frasesProntas = [
     "Você é a razão do meu sorriso todos os dias. ❤️",
@@ -64,7 +65,7 @@ const LoveNotes = () => {
     mensagemParaMim: "Sua mensagem especial para a pessoa amada.",
     mensagemParaVoce: "A mensagem especial da pessoa amada para você.",
   };
-
+  const [respostaEla, setRespostaEla] = useState("");
   return (
     <div className="container">
       <header>
@@ -93,18 +94,27 @@ const LoveNotes = () => {
         <h2>Nossa História</h2>
         <p style={{ whiteSpace: "pre-line" }}>{aniversario.nossaHistoria}</p>
       </section>
+      <section className="depoimentos-section">
+      <h2>💌 Depoimentos Um do Outro</h2>
 
-      <section>
-        <h2>Mensagens Especiais</h2>
-        <div>
-          <h3>Para Mim</h3>
-          <p>{aniversario.mensagemParaMim}</p>
-        </div>
-        <div>
-          <h3>Para Você</h3>
-          <p>{aniversario.mensagemParaVoce}</p>
-        </div>
-      </section>
+      <div className="depoimento">
+        <h3>O que eu admiro nela 💖</h3>
+        <p>
+          Eu admiro o jeito que você transforma qualquer dia comum em um momento especial. 
+          Sua risada, seu cuidado, seu olhar que fala mais que mil palavras. Você é a minha paz no caos, 
+          minha força nos dias difíceis, e meu sorriso nos dias bons. Eu Te amo por tudo que você é e por tudo que você fez por mim.
+        </p>
+      </div>
+      <form action="https://formsubmit.co/vitorizidoro288@gmail.com" method="POST">
+  <textarea
+    name="respostaDaNamorada"
+    placeholder="Se quiser, escreva aqui o que você sente ❤️"
+    required
+  />
+  <input type="hidden" name="_subject" value="Nova resposta da sua namorada!" />
+  <button className="buttonNext" type="submit">Enviar para meu e-mail</button>
+</form>
+    </section>
 
       <footer>
         <p style={{textAlign : "left"}}>

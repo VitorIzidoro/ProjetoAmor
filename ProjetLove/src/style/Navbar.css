@@ -62,3 +62,46 @@
       font-size: 1.5rem;
     }
   }
+
+/* Ícone de menu hambúrguer */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.menu-icon .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #c2185b;
+  margin: 4px 0;
+  transition: 0.4s;
+  border-radius: 3px;
+}
+
+/* Esconde o input */
+.menu-toggle {
+  display: none;
+}
+
+/* Slide menu mobile */
+@media (max-width: 430px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    transition: max-height 0.5s ease;
+  }
+
+  /* Quando o menu está aberto */
+  .menu-toggle:checked ~ .nav-links {
+    max-height: 300px; /* Ajuste conforme a altura do seu menu */
+  }
+}

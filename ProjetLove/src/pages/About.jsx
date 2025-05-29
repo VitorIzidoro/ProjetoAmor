@@ -18,12 +18,15 @@ const cartas = [
 ];
 
 const timeline = [
+  { data: "29/05/2024", mensagem: "As primeiras linhas de um amor sem fim." },
+  { data: "19/06/2024", mensagem: "A primeira declaração de amor." },
+  { data: "08/09/2024", mensagem: "Conhecer os avós." },
+  { data: "15/09/2024", mensagem: "Conhecendo os sogros." },
   { data: "22/09/2024", mensagem: "O grande sim que mudou tudo." },
-  {
-    data: "25/12/2024",
-    mensagem: "Nosso primeiro Natal juntos, cheio de amor.",
-  },
-  { data: "14/02/2024", mensagem: "O primeiro Dia dos Namorados." },
+  { data: "25/10/2024", mensagem: "O meu aniversário." },
+  { data: "01/11/2024", mensagem: "O primeiro poema de amor." },
+  { data: "25/12/2024", mensagem: "Nosso primeiro Natal juntos, cheio de amor." },
+  { data: "08/03/2025", mensagem: "O Aniversario da gata." },
 ];
 
 const coisasQueAmo = [
@@ -159,39 +162,20 @@ function NotasDeAmor() {
       >
         {frasesProntas[indice]}
       </p>
+<div className="button-group">
 
-      <button
+      <button className="buttonNext"
         onClick={mostrarFraseAnterior}
-        style={{
-          marginTop: "15px",
-          padding: "10px 20px",
-          backgroundColor: "#880e4f",
-          color: "white",
-          border: "none",
-          borderRadius: "6px",
-          cursor: "pointer",
-          gap: "10px",
-        }}
-      >
+        >
         Ver frase Anterior 💬
       </button>
 
-      <button
-        onClick={mostrarProximaFrase}
-        style={{
-          marginTop: "15px",
-          padding: "10px 20px",
-          backgroundColor: "#880e4f",
-          color: "white",
-          border: "none",
-          borderRadius: "6px",
-          cursor: "pointer",
-          gap: "10px",
-          margin: "10px",
-        }}
-      >
+      <button className="buttonBefore"
+        onClick={mostrarProximaFrase} 
+        >
         Ver próxima frase 💬
       </button>
+          </div>
 
     </div>
       </section>
