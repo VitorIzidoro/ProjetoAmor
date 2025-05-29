@@ -3,9 +3,39 @@ import "../style/styleAll.css";
 import Imagem11 from "../assets/Imagem11.jpeg";
 import Imagem1 from "../assets/Imagem1.jpeg";
 import Imagem14 from "../assets/Imagem14.jpeg";
+import  { useState } from "react";
+
 
 const LoveNotes = () => {
-  // Dados de exemplo - substitua pelos seus dados reais
+  const frasesProntas = [
+    "Você é a razão do meu sorriso todos os dias. ❤️",
+    "Te encontrar foi o melhor presente que a vida me deu.",
+    "Com você, tudo faz sentido.",
+    "Seu abraço é meu lugar favorito no mundo.",
+    "Te amar é tão natural quanto respirar.",
+    "Você transforma meus dias comuns em momentos incríveis.",
+    "Cada segundo ao seu lado é precioso.",
+    "Meu coração é completamente seu.",
+  ];
+
+  const [indice, setIndice] = useState(0);
+
+  const mostrarProximaFrase = () => {
+    if (indice < frasesProntas.length - 1) {
+      setIndice(indice + 1);
+    } else {
+      alert("Você já viu todas as frases. 💖");
+    }
+  };
+
+  const mostrarFraseAnterior = () => {
+    if (indice > 0) { 
+      setIndice(indice - 1);
+      } else {
+        alert("Você já viu a primeira frase. 😊");
+  }
+  }
+
   const aniversario = {
     titulo: "Nosso Primeiro Ano de Amor",
     mensagemBoasVindas:
@@ -86,8 +116,10 @@ const LoveNotes = () => {
           <p> Com todo o meu amor, Teu Vitor, teu namorado, teu eterno apaixonado. 💌
         </p>
       </footer>
+
     </div>
   );
 };
+
 
 export default LoveNotes;

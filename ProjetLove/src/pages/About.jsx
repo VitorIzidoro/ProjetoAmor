@@ -13,7 +13,7 @@ const cartas = [
   {
     titulo: "O Primeiro Poema",
     texto:
-      "Amor, eu estava aqui sem fazer nada e decidi fazer um poema pra você. Esse é meu primeiro poema na vida, ou seja, não vai sair grandes coisas, mas é de coração. É bom se arriscar às vezes, só assim eu vou saber se consigo ou não, então eu espero que você goste dele. \n ------------------------------------------------------------------------------------------ \n Primeiro poema de muitos <3 \n Meu amor, olhos lindos e brilhantes, \n Com um coração radiante, \nUma voz tão doce, como uma melodia, \n Meu coração palpita só te ver você chegar. \n\n\ Seu sorriso é como o sol na minha vida, \n Ilumina o meu dia e a minha noite. \nTeus abraços são como águas plácidas, \n Que me acalma e tranquiliza. \n\nOs seus carinhos é meu refúgio, \nMeu tudo, meu porto seguro. \n Seu carinho é como um lápis, \n Pois é ele que desenha o meu sorriso. \n\n Desde que te conheci, \n meu coração anseia por ti. \n Meu exílio é ficar sem meu grande amor. \n Melhor companhia só pode ser você. \n\n Minha alma se rendeu ao te ver, \n Pois amor mais lindo não se pode ter. \n Meu coração é todo seu. \n------------------------------------------------------------------------------------------",
+      "Amor, eu estava aqui sem fazer nada e decidi fazer um poema pra você. Esse é meu primeiro poema na vida, ou seja, não vai sair grandes coisas, mas é de coração. É bom se arriscar às vezes, só assim eu vou saber se consigo ou não, então eu espero que você goste dele. \n ------------------------------------------------------------------------------------------ \n Primeiro poema de muitos <3 \n Meu amor, olhos lindos e brilhantes, \n Com um coração radiante, \nUma voz tão doce, como uma melodia, \n Meu coração palpita só te ver você chegar. \n\n\ Seu sorriso é como o sol na minha vida, \n Ilumina o meu dia e a minha noite. \nTeus abraços são como águas plácidas, \n Que me acalma e tranquiliza. \n\nOs seus carinhos é meu refúgio, \nMeu tudo, meu porto seguro. \n Seu carinho é como um lápis, \n Pois é ele que desenha o meu sorriso. \n\n Desde que te conheci, \n meu coração anseia por ti. \n Meu exílio é ficar sem meu grande amor. \n Melhor companhia só pode ser você. \n\n Minha alma se rendeu ao te ver, \n Pois amor mais lindo não se pode ter. \n Meu coração é todo seu. \n------------------------------------------------------------------------------------------ \n Eu fiz isso só pra mostrar mais uma vez o quanto eu sou apaixonado por você. Me arrisquei no português só pra te deixar feliz. Eu espero que goste dele. Não é o melhor que você já leu, mas eu fiz do meu jeitinho único e de dentro do coração. \n\n EU TE AMO MUITO MEU AMOR ❤️❤️❤️",
   },
 ];
 
@@ -37,26 +37,74 @@ const coisasQueAmo = [
   "Seus beijos que me fazem sentir vivo.",
   "Seu amor que me faz querer ser melhor.",
   "Seu carinho que me faz sentir amado.",
+  "Amo como você sempre me motiva a não desistir.",
+  "Seu amor que me faz sentir seguro.",
+  "Amo o seu jeito de me fazer sentir especial.",
+  "Seu jeito doce e delicado.",
+  "Amo cada segundo ao seu lado.",
+  "Sua doce voz",
+  "Sua companhia de todos os dias.",
+  "Amo quando você me faz mostra o melhor caminho.",
+  "Seu amor que aquece o meu coração.",
+  "Quando você me ajuda a resolve todos os meus problemas.",
 ];
 
-const frases = [
-  "Você é minha paz.",
-  "Amar você é fácil.",
-  "Você é meu lugar seguro.",
-  "Com você, tudo é melhor.",
-  "Você é minha razão de ser.",
-  "Sempre vou te amar.",
-  "Você é minha escolha de todos os dias.",
-  "Você é tudo que eu pedi a Deus.",
-];
 
-export default function NotasDeAmor() {
-  const [frase, setFrase] = useState("");
 
-  const gerarFrase = () => {
-    const aleatoria = frases[Math.floor(Math.random() * frases.length)];
-    setFrase(aleatoria);
-  };
+
+function NotasDeAmor() {
+   const frasesProntas = [
+      "1 - Você é a razão do meu sorriso todos os dias. ❤️",
+      "2 - Te encontrar foi o melhor presente que a vida me deu.",
+      "3 - Com você, tudo faz sentido.",
+      "4 - Seu abraço é meu lugar favorito no mundo.",
+      "5 - Te amar é tão natural quanto respirar.",
+      "6 - Você transforma meus dias comuns em momentos incríveis.",
+      "7 - Cada segundo ao seu lado é precioso.",
+      "8 - Meu coração é completamente seu.",
+      "9 - Você é minha paz.",
+      "10 - Amar você é fácil.",
+      "11 - Você é meu lugar seguro.",
+      "12 - Com você, tudo é melhor.",
+      "13 - Você é minha razão de ser.",
+      "14 - Sempre vou te amar.",
+      "15 - Você é minha escolha de todos os dias.",
+      "16 - Você é tudo que eu pedi a Deus.",
+      "17 - Amo como você cuida de mim mesmo sem perceber",
+      "18 - Você é minha inspiração.",
+      "19 - Você é minha luz.",
+      "20 - Você é minha vida.",
+      "21 - Amo quando você me chama de 'meu amor' com tanta verdade.",
+      "22 - Você é minha melhor amiga.",
+      "23 - Amo sua determinação.",
+      "24 - Você é minha força.",
+      "25 - Você é minha razão de viver.",
+      "26 - Amo seu cheirinho que me faz sentir saudade quando você não está.",
+      "27 - Amo o jeito como você me faz sentir amado.",
+      "28 - Amo simplesmente... tudo em você.",
+      "29 - Amo como você é intensa, verdadeira e doce.",
+      "30 - Amo o jeito que você fica quando está apaixonada.",
+
+    ];
+  
+    const [indice, setIndice] = useState(0);
+  
+    const mostrarProximaFrase = () => {
+      if (indice < frasesProntas.length - 1) {
+        setIndice(indice + 1);
+      } else {
+        alert("Você já viu todas as frases. 💖");
+      }
+    };
+  
+    const mostrarFraseAnterior = () => {
+      if (indice > 0) { 
+        setIndice(indice - 1);
+        } else {
+          alert("Você já viu a primeira frase. 😊");
+    }
+    }
+  
 
   return (
     <div className="notas-page">
@@ -92,13 +140,64 @@ export default function NotasDeAmor() {
             <li key={index}>❤️ {coisa}</li>
           ))}
         </ul>
+        <p>Eu poderia passar cada segundo da minha vida te elogiando, dizendo o quanto te admiro e o quanto você é especial pra mim.<br></br>Eu te amo muito❤️</p>
       </section>
 
-      <section className="surpresa">
-        <h2>Frase surpresa</h2>
-        <button onClick={gerarFrase}>Mostrar uma frase de amor</button>
-        {frase && <p className="frase">{frase}</p>}
+      <section>
+      <div style={{ padding: "20px", textAlign: "center" }}>
+      <h2>Notas de Amor 💌</h2>
+
+      <p
+        style={{
+          fontStyle: "italic",
+          fontSize: "1.2rem",
+          backgroundColor: "#fce4ec",
+          padding: "15px",
+          borderRadius: "8px",
+          color: "#880e4f",
+        }}
+      >
+        {frasesProntas[indice]}
+      </p>
+
+      <button
+        onClick={mostrarFraseAnterior}
+        style={{
+          marginTop: "15px",
+          padding: "10px 20px",
+          backgroundColor: "#880e4f",
+          color: "white",
+          border: "none",
+          borderRadius: "6px",
+          cursor: "pointer",
+          gap: "10px",
+        }}
+      >
+        Ver frase Anterior 💬
+      </button>
+
+      <button
+        onClick={mostrarProximaFrase}
+        style={{
+          marginTop: "15px",
+          padding: "10px 20px",
+          backgroundColor: "#880e4f",
+          color: "white",
+          border: "none",
+          borderRadius: "6px",
+          cursor: "pointer",
+          gap: "10px",
+          margin: "10px",
+        }}
+      >
+        Ver próxima frase 💬
+      </button>
+
+    </div>
       </section>
+
     </div>
   );
 }
+
+export default NotasDeAmor
